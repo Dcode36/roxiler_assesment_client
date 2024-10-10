@@ -1,0 +1,27 @@
+h1 {
+  position: relative;
+  font-size: 30px;
+  z-index: 1;
+  overflow: hidden;
+  text-align: center;
+  font-weight: 600;
+  color: #161D6F;
+}
+
+h1:before,
+h1:after {
+  position: absolute;
+  top: 51%;
+  overflow: hidden;
+  width: 48%;
+  height: 1px;
+  content: '\a0';
+  background-color: #161D6F;
+  /* change color if needed*/
+  margin-left: 2%;
+}
+
+h1:before {
+  margin-left: -50%;
+  text-align: right;
+}
